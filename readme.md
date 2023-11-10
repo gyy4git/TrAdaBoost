@@ -1,3 +1,4 @@
+# Transfer Learning - TrAdaboost
 In transfer learning, we can share the learned model parameters with the new model in some way to speed up and optimize the learning efficiency of the model. We do not need to learn from scratch like most models, or use the similarity between data to learn some small models. The sample data is expanded to achieve the effect of increasing the sample size, thereby improving the generalization and prediction capabilities of the model.
 
 The domain of transfer learning represents the subject of learning and expresses the characteristics of the data and the distribution of the characteristics. The domain is divided into target domain (Target Domain) and source domain (Source Domain). The target domain refers to the domain to be studied, and the source domain refers to the domain of existing knowledge. The task (Task) consists of the objective function and the learning result, which is the result of learning.
@@ -6,4 +7,4 @@ Transfer learning can be divided into instance-based, feature-based, model-based
 
 TrAdaboost adds weight to each sample and uses the weight to weaken test set data with different distributions, thereby improving the effect of the model. In each iterative training, if the model misclassifies a source domain sample, then this sample may have a large gap with the target domain sample, so the weight of this sample needs to be reduced. By multiplying the sample by a weight between 0 and 1, through the influence of the weight value, the impact of this sample on the classification model will be reduced in the next iteration. After a series of iterations, the source domain is consistent with the target The weights of samples with similar domains or that are helpful for classifying the target domain will be increased, while the weights of other source domains will be reduced.
 
-source: [Boosting for Transfer Learning](https://cse.hkust.edu.hk/~qyang/Docs/2007/tradaboost.pdf)
+Source: [Boosting for Transfer Learning](https://cse.hkust.edu.hk/~qyang/Docs/2007/tradaboost.pdf)
